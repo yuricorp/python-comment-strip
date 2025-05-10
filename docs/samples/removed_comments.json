@@ -1,0 +1,1562 @@
+[
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 36,
+        "comment_text": "# Global constant for the default log file name"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 45,
+        "comment_text": "# Optional: Add line_content if context is desired, but adds complexity"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 46,
+        "comment_text": "# line_content: str"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 50,
+        "comment_text": "# Use lowercase for case-insensitive matching of type/noqa"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 52,
+        "comment_text": "# Shebang"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 53,
+        "comment_text": "# Encoding declaration"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 55,
+        "comment_text": "# Type hints (flexible on whitespace)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 56,
+        "comment_text": "# Linter ignores (flexible on case/whitespace around it)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 76,
+        "comment_text": "# Default encoding"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 80,
+        "comment_text": "# detect_encoding reads one line, need to seek back"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 85,
+        "comment_text": "# Fallback"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 88,
+        "comment_text": "# Fallback"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 90,
+        "comment_text": "# Reset cursor"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 92,
+        "comment_text": "# For comparison later and initial syntax check, read the original content with detected encoding"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 98,
+        "comment_text": "# Cannot process if cannot decode"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 100,
+        "comment_text": "# Basic syntax check *before* tokenizing, as tokenize can sometimes hang or error on severe syntax issues"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 105,
+        "comment_text": "# File is not valid Python"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 107,
+        "comment_text": "# Reset again for generate_tokens via text wrapper"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 109,
+        "comment_text": "# Use TextIOWrapper for tokenize.generate_tokens"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 119,
+        "comment_text": "# Catch-all for other unexpected errors during read/tokenize"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 132,
+        "comment_text": "# Store the comment text as captured by tokenize, which includes leading whitespace"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 136,
+        "comment_text": "# Store comment text without trailing newline"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 138,
+        "comment_text": "# ENCODING token is synthetic and not needed for untokenize on text streams"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 142,
+        "comment_text": "# If no comments were targeted for removal, return empty list and don't modify file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 144,
+        "comment_text": "# print(f\"Info: No hash comments removed from {file_path}.\")"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 145,
+        "comment_text": "# Success, but nothing removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 148,
+        "comment_text": "# Reconstruct code from kept tokens"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 149,
+        "comment_text": "# untokenize often preserves whitespace well, but normalize trailing space and final newline"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 151,
+        "comment_text": "# Remove trailing whitespace from each line and ensure a single newline at the end"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 154,
+        "comment_text": "# Normalize original content for comparison too"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 159,
+        "comment_text": "# This case is unlikely if removed_comments_info is not empty, but as a safety check"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 161,
+        "comment_text": "# Return the info, but file wasn't changed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 165,
+        "comment_text": "# Return the info about comments found, indicating they *would* have been removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 166,
+        "comment_text": "# The caller (output function) doesn't need to know about untokenize error,"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 167,
+        "comment_text": "# only that comments were identified. File modification status is handled next."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 168,
+        "comment_text": "# Return info, file not modified"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 170,
+        "comment_text": "# Write the cleaned code back *only* if untokenize was successful and changes were intended"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 174,
+        "comment_text": "# print(f\"Info: Successfully removed comments from {file_path}.\")"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 175,
+        "comment_text": "# Success, comments removed and file modified"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 178,
+        "comment_text": "# Return the info, note that file write failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 179,
+        "comment_text": "# Return info, file not modified"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 203,
+        "comment_text": "# Case-insensitive check for .py"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 206,
+        "comment_text": "# Use end='' for inline status"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 212,
+        "comment_text": "# Complete the inline message"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 216,
+        "comment_text": "# Complete inline"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 218,
+        "comment_text": "# Complete inline"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 243,
+        "comment_text": "# If no comments were removed, clean up any pre-existing log file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 251,
+        "comment_text": "# print(f\"Info: No comments were removed, no log file created at {log_path}.\")"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 252,
+        "comment_text": "# No comments and no existing log, nothing to do."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 254,
+        "comment_text": "# No data to log or successfully cleaned up old log is not a failure"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 257,
+        "comment_text": "# Convert dataclass objects to dictionaries for JSON serialization"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 262,
+        "comment_text": "# Use indent for readability in the log file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 319,
+        "comment_text": "# Ensure paths are absolute for consistency"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 323,
+        "comment_text": "# Ensure the directory for the log file exists"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 327,
+        "comment_text": "# exist_ok=True is helpful"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 331,
+        "comment_text": "# Exit if log directory cannot be created"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 334,
+        "comment_text": "# Flag to indicate if any file/directory processing failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 340,
+        "comment_text": "# Case-insensitive check"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 347,
+        "comment_text": "# File processing failed entirely"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 359,
+        "comment_text": "# At least one file in dir failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 361,
+        "comment_text": "# Always attempt to output the collected data to the log file."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 362,
+        "comment_text": "# The output_removed_comments function handles the case of empty data (no log file created)."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 366,
+        "comment_text": "# Log writing failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 372,
+        "comment_text": "# Print success only if no processing or logging errors occurred."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 373,
+        "comment_text": "# If files failed but logging succeeded, it's still an overall failure."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 378,
+        "comment_text": "# This is a common pattern to allow running the script directly,"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 379,
+        "comment_text": "# while enabling importing the functions for testing or other uses."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\rmcom.py",
+        "line_number": 380,
+        "comment_text": "# This block is not executed when imported."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 12,
+        "comment_text": "# Add the parent directory to the Python path to import rmcom"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 13,
+        "comment_text": "# This ensures tests find the module correctly regardless of where pytest/unittest is run from"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 14,
+        "comment_text": "# Check if the parent directory is already in sys.path to avoid adding it multiple times"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 21,
+        "comment_text": "# Import the new dataclass"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 23,
+        "comment_text": "# Helper function to read JSON log content"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 29,
+        "comment_text": "# Handle empty file case for json.load"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 32,
+        "comment_text": "# An empty file might be a valid empty JSON list []"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 35,
+        "comment_text": "# print(f\"Error decoding JSON log file {file_path}: {e}\") # uncomment for debugging test failures"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 36,
+        "comment_text": "# Return None if not valid JSON"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 38,
+        "comment_text": "# print(f\"Error reading log file {file_path}: {e}\") # uncomment for debugging test failures"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 39,
+        "comment_text": "# Return None if file cannot be read"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 43,
+        "comment_text": "# Create a temporary directory to store test files"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 45,
+        "comment_text": "# Use .json suffix"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 46,
+        "comment_text": "# Ensure a clean slate for each test for the default log name as well in CWD"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 47,
+        "comment_text": "# This might be created by a test that doesn't use --log explicitly"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 51,
+        "comment_text": "# Ensure log file in temp dir doesn't exist from previous runs within this test dir"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 57,
+        "comment_text": "# Remove the temporary directory and its contents"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 59,
+        "comment_text": "# Clean up default log file if created by any test not using self.log_file_path"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 60,
+        "comment_text": "# Check if the test_dir path is a prefix of the log path to avoid removing unrelated files."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 65,
+        "comment_text": "# Ignore errors if file is already removed or access denied"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 71,
+        "comment_text": "# Ensure parent directory exists (for subdir tests)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 84,
+        "comment_text": "# --- Tests for is_preserved_comment ---"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 90,
+        "comment_text": "# With leading space"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 92,
+        "comment_text": "# Case insensitive"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 93,
+        "comment_text": "# With leading space"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 99,
+        "comment_text": "# --- Tests for remove_hash_comments ---"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 107,
+        "comment_text": "# The tokenizer might add a newline if the file doesn't end with one,"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 108,
+        "comment_text": "# or adjust spacing. Let's adjust expected to what tokenize would produce."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 109,
+        "comment_text": "# The key is that the comments specified for removal are gone."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 110,
+        "comment_text": "# Normalization during write should ensure rstrip + final newline."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 118,
+        "comment_text": "# rmcom uses absolute paths"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 122,
+        "comment_text": "# Should not be None (no fatal error)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 123,
+        "comment_text": "# Should have captured 3 comments"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 125,
+        "comment_text": "# Check the captured info details"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 126,
+        "comment_text": "# Note: Line numbers are 1-based, comment_text includes leading whitespace as per tokenize.COMMENT"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 128,
+        "comment_text": "# Includes leading space"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 129,
+        "comment_text": "# No leading space on this line"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 130,
+        "comment_text": "# Includes leading space"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 132,
+        "comment_text": "# Sort by line number and then comment text for a consistent comparison order"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 135,
+        "comment_text": "# Check the file content was modified correctly"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 152,
+        "comment_text": "# Preserved comments remain, normal comment is removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 153,
+        "comment_text": "# Untokenize might add an empty line after coding declarations."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 154,
+        "comment_text": "# Script normalizes by rstrip + final newline."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 171,
+        "comment_text": "# Only one comment should be removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 173,
+        "comment_text": "# Check the captured info details (includes leading space as it's an inline comment)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 177,
+        "comment_text": "# Check the file content was modified correctly"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 192,
+        "comment_text": "# Should be successful processing"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 193,
+        "comment_text": "# Should return an empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 195,
+        "comment_text": "# File should be unchanged"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 212,
+        "comment_text": "# No comments should be removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 214,
+        "comment_text": "# File should be unchanged"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 220,
+        "comment_text": "# Use a path that does not exist within the temporary directory"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 226,
+        "comment_text": "# Should return None on file open/read error"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 230,
+        "comment_text": "# Create a file that is not valid Python, e.g. binary or malformed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 231,
+        "comment_text": "# Null byte"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 236,
+        "comment_text": "# Should return None on tokenization error"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 240,
+        "comment_text": "# Python 2 syntax in Py3 environment, should cause SyntaxError on compile or tokenize"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 246,
+        "comment_text": "# Should return None on syntax error"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 255,
+        "comment_text": "# Mock untokenize to raise an error"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 259,
+        "comment_text": "# Processing up to tokenization was ok"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 260,
+        "comment_text": "# Should have captured the comment info"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 262,
+        "comment_text": "# Check captured info details (includes leading space as it's an inline comment)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 266,
+        "comment_text": "# Verify the file content is unchanged"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 277,
+        "comment_text": "# Mock the 'open' call specifically for writing to raise an error"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 280,
+        "comment_text": "# Check if it's the target file being opened in write mode"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 283,
+        "comment_text": "# Use the original open for all other cases (including reading the same file earlier)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 286,
+        "comment_text": "# Apply the mock only within this context"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 290,
+        "comment_text": "# Processing up to comment capture was ok"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 291,
+        "comment_text": "# Should have captured the comment info"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 293,
+        "comment_text": "# Check captured info details (includes leading space as it's an inline comment)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 297,
+        "comment_text": "# Verify the file content is unchanged"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 303,
+        "comment_text": "# This character is valid in cp1252 but would be problematic if read as strict ASCII"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 304,
+        "comment_text": "# and different from its UTF-8 representation."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 309,
+        "comment_text": "# The tokenizer/untokenize may add a blank line after the encoding line,"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 310,
+        "comment_text": "# script normalizes by rstrip + final newline."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 323,
+        "comment_text": "# Check captured info details (includes leading space for the inline comment)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 324,
+        "comment_text": "# Note: CP1252 includes characters that might not be simple ASCII."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 325,
+        "comment_text": "# No leading space on this line"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 326,
+        "comment_text": "# Includes leading space"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 330,
+        "comment_text": "# Check file content"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 340,
+        "comment_text": "# Content after first pass (comments removed, normalized)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 346,
+        "comment_text": "# First pass"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 355,
+        "comment_text": "# Second pass on the modified file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 358,
+        "comment_text": "# No comments should be removed this time"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 360,
+        "comment_text": "# File content should be the same as after the first pass"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 371,
+        "comment_text": "# Empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 372,
+        "comment_text": "# File unchanged"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 379,
+        "comment_text": "# Expected content reflects lines after removing comments and rstrip, plus final newline"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 390,
+        "comment_text": "# Should have captured 2 comments"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 392,
+        "comment_text": "# Check captured info details (includes leading space as captured by tokenize)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 393,
+        "comment_text": "# Tokenizer captures leading whitespace on the line before the #"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 394,
+        "comment_text": "# Includes leading spaces from the line start"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 399,
+        "comment_text": "# Check file content"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 406,
+        "comment_text": "# --- Tests for output_removed_comments ---"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 411,
+        "comment_text": "# Ensure log file doesn't exist from previous runs within this test dir"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 427,
+        "comment_text": "# Output should be successful"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 434,
+        "comment_text": "# Check data structure and content"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 443,
+        "comment_text": "# Ensure log file does not exist initially"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 446,
+        "comment_text": "# No comments to log is still successful"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 447,
+        "comment_text": "# Log file should not be created"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 451,
+        "comment_text": "# Create a dummy log file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 454,
+        "comment_text": "# Verify it was created"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 458,
+        "comment_text": "# Existing log should be removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 463,
+        "comment_text": "# Mock open to raise an error when writing"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 473,
+        "comment_text": "# Should indicate failure"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 474,
+        "comment_text": "# Depending on when the error is raised during file write,"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 475,
+        "comment_text": "# the file might exist but be empty or incomplete."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 476,
+        "comment_text": "# A robust test checks if the file is NOT valid JSON or does not exist."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 477,
+        "comment_text": "# Should not be a valid JSON log"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 480,
+        "comment_text": "# --- Tests for process_directory ---"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 489,
+        "comment_text": "# Use TestRmcom's helper logic for consistency"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 491,
+        "comment_text": "# Ensure dir exists"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 498,
+        "comment_text": "# Configure mock to return empty list (no comments removed, but successful processing)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 508,
+        "comment_text": "# Non-python file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 518,
+        "comment_text": "# Suppress print output from process_directory during this test"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 522,
+        "comment_text": "# Check that remove_hash_comments was called for the correct files"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 523,
+        "comment_text": "# Using any_order=True because os.walk order isn't guaranteed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 532,
+        "comment_text": "# Check that the non-py file was NOT processed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 538,
+        "comment_text": "# Mock returned empty lists"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 539,
+        "comment_text": "# Mock returned non-None values (simulating success)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 546,
+        "comment_text": "# File with no comments removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 554,
+        "comment_text": "# Configure mock to return lists of CommentRemovalInfo"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 555,
+        "comment_text": "# Include leading space in comment text as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 558,
+        "comment_text": "# For files with no comments removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 560,
+        "comment_text": "# Use a side_effect function to return different data for different files"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 568,
+        "comment_text": "# Should not happen based on call checks above, but good practice"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 573,
+        "comment_text": "# Suppress print"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 577,
+        "comment_text": "# Called for file1.py, file2.py, file3_no_comments.py"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 578,
+        "comment_text": "# Should have collected 1 from file1 + 1 from file2 (file3 returns empty)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 579,
+        "comment_text": "# All calls returned non-None"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 581,
+        "comment_text": "# Check the collected data matches the expected info (only from files with removed comments)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 589,
+        "comment_text": "# This one will fail in mock"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 590,
+        "comment_text": "# This one will succeed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 595,
+        "comment_text": "# Configure mock to return None for the bad file, and a list for the good file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 596,
+        "comment_text": "# Include leading space in comment text as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 601,
+        "comment_text": "# Simulate processing failure (read/tokenize/syntax)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 603,
+        "comment_text": "# Simulate success with 1 comment removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 604,
+        "comment_text": "# Should not happen with these files"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 608,
+        "comment_text": "# Capture print output to check failure message"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 613,
+        "comment_text": "# One file should have failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 614,
+        "comment_text": "# Should only contain data from the good file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 616,
+        "comment_text": "# Check the collected data contains only info from the good file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 619,
+        "comment_text": "# Check print output for failure count message"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 630,
+        "comment_text": "# Create an empty subdirectory within the test dir"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 635,
+        "comment_text": "# Suppress print"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 639,
+        "comment_text": "# No .py files to process"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 640,
+        "comment_text": "# No comments collected"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 641,
+        "comment_text": "# No files failed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 643,
+        "comment_text": "# --- Tests for main function ---"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 647,
+        "comment_text": "# Note: main() will use os.path.abspath, so paths passed to mocks"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 648,
+        "comment_text": "# should be absolute versions of paths created in the temp dir."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 652,
+        "comment_text": "# Ensure default log file in CWD doesn't exist from other runs/tests"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 659,
+        "comment_text": "# Clean up any logs created outside the temp dir (e.g., default in CWD)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 666,
+        "comment_text": "# Clean up custom log if it happened to be created outside tempdir (unlikely with setup)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 675,
+        "comment_text": "# Use TestRmcom's helper logic for consistency"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 677,
+        "comment_text": "# Ensure dir exists"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 682,
+        "comment_text": "# Helper to mock parse_args with specific values"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 684,
+        "comment_text": "# Make paths absolute as main() does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 687,
+        "comment_text": "# abs_log is handled by main(), pass relative or absolute as needed for testing"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 688,
+        "comment_text": "# Let's pass the absolute path we intend main() to use"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 696,
+        "comment_text": "# Suppress print for cleaner test output"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 702,
+        "comment_text": "# Configure mocks"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 704,
+        "comment_text": "# Include leading space in comment text as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 707,
+        "comment_text": "# Simulate successful log write"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 711,
+        "comment_text": "# Check calls"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 712,
+        "comment_text": "# rmcom.remove_hash_comments now takes only file_path"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 719,
+        "comment_text": "# Suppress print"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 724,
+        "comment_text": "# Configure mocks"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 726,
+        "comment_text": "# Include leading space in comment text as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 728,
+        "comment_text": "# Return list of info and 0 failed count"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 729,
+        "comment_text": "# Simulate successful log write"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 733,
+        "comment_text": "# Check calls"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 734,
+        "comment_text": "# process_directory now takes only directory"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 740,
+        "comment_text": "# Suppress print"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 746,
+        "comment_text": "# Configure mocks"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 748,
+        "comment_text": "# Include leading space in comment text as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 751,
+        "comment_text": "# Simulate successful log write"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 755,
+        "comment_text": "# Check calls"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 759,
+        "comment_text": "# Correcting this test: output_removed_comments is always called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 761,
+        "comment_text": "# To capture output"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 762,
+        "comment_text": "# Ensure it's not called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 763,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 771,
+        "comment_text": "# Output is called with empty data because no comments were collected"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 776,
+        "comment_text": "# Check that an error message containing the path was printed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 784,
+        "comment_text": "# Correcting this test: output_removed_comments is always called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 788,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 790,
+        "comment_text": "# Not a .py file"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 797,
+        "comment_text": "# Output is called with empty data because no comments were collected"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 809,
+        "comment_text": "# Correcting this test: output_removed_comments is always called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 813,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 821,
+        "comment_text": "# Output is called with empty data because no comments were collected"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 833,
+        "comment_text": "# Adjusting this test to handle os.makedirs calls from test helper"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 834,
+        "comment_text": "# Also, ensure output_removed_comments is called with data"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 835,
+        "comment_text": "# To prevent actual processing"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 836,
+        "comment_text": "# Mock the output step"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 838,
+        "comment_text": "# Suppress print"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 844,
+        "comment_text": "# Mock os.makedirs, using the original implementation as the side_effect"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 845,
+        "comment_text": "# This allows the calls from _create_temp_py_file to proceed, while"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 846,
+        "comment_text": "# the mock tracks the calls made by main."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 850,
+        "comment_text": "# Need to patch os.path.exists so it initially returns False for the log_dir"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 851,
+        "comment_text": "# but works normally for the test_dir and the file itself."
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 856,
+        "comment_text": "# Use original exists for all other paths (like temp dir)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 858,
+        "comment_text": "# Create the temporary file *within* the patch context"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 860,
+        "comment_text": "# Use the mock instance as the patch target"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 866,
+        "comment_text": "# Simulate remove_hash_comments returning data so output_removed_comments is called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 867,
+        "comment_text": "# Include leading space as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 870,
+        "comment_text": "# Simulate successful log write"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 874,
+        "comment_text": "# Assert that a call to create the specific log directory occurred"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 877,
+        "comment_text": "# Ensure processing and output were attempted"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 879,
+        "comment_text": "# output_removed_comments should be called with the data"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 883,
+        "comment_text": "# Adjusting this test to handle os.makedirs calls from test helper and define mock locally"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 884,
+        "comment_text": "# output_removed_comments is called even if processing fails, but with an empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 887,
+        "comment_text": "# Should not be called if dir creation fails"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 888,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 890,
+        "comment_text": "# Make it two levels deep to test dir creation robustly"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 894,
+        "comment_text": "# Mock os.makedirs with a side effect that raises OSError only for the log directory path"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 897,
+        "comment_text": "# Raise OSError only if the path is the specific log directory being tested"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 899,
+        "comment_text": "# Use a specific error message for clarity"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 900,
+        "comment_text": "# Use the original os.makedirs for any other paths (like temp file parent dirs)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 905,
+        "comment_text": "# Only mock exists for the specific log directory we expect to be created"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 908,
+        "comment_text": "# Use original exists for all other paths (like temp dir)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 910,
+        "comment_text": "# Create the temporary file *within* the patch context that allows other makedirs calls"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 912,
+        "comment_text": "# Apply the conditional side effect"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 914,
+        "comment_text": "# File path doesn't strictly matter as remove won't be called"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 920,
+        "comment_text": "# Assert that makedirs was called with the log directory path"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 923,
+        "comment_text": "# If log directory creation fails, main() should exit before processing files or trying to output logs"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 935,
+        "comment_text": "# Correcting this test: output_removed_comments is always called, but with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 936,
+        "comment_text": "# Simulate file processing failure"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 939,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 949,
+        "comment_text": "# Output is called with empty data because processing returned None (no comments collected)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 952,
+        "comment_text": "# Check print output indicates failure"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 957,
+        "comment_text": "# This test was mostly correct, just needed assertion fix from earlier"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 958,
+        "comment_text": "# Simulate dir processing with 1 failure, no comments removed"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 961,
+        "comment_text": "# Should be called with empty list"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 970,
+        "comment_text": "# output_removed_comments should be called with the empty list returned by process_directory"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 973,
+        "comment_text": "# Check print output indicates failure (due to failed files)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 978,
+        "comment_text": "# This test was mostly correct, just needed assertion fix from earlier"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 979,
+        "comment_text": "# Simulate success with comments"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 982,
+        "comment_text": "# Simulate log write failure"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 989,
+        "comment_text": "# Simulate remove_hash_comments returning data"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 990,
+        "comment_text": "# Include leading space as remove_hash_comments does"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 999,
+        "comment_text": "# Check print output indicates failure (due to log write)"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 1005,
+        "comment_text": "# Use a different argv to prevent unittest from interpreting command line args"
+    },
+    {
+        "file_path": "X:\\git\\python-comment-strip\\tests\\test_rmcom.py",
+        "line_number": 1006,
+        "comment_text": "# if running the file directly."
+    }
+]

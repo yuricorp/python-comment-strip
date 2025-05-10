@@ -1,0 +1,36 @@
+[project]
+name = "python-comment-strip"
+version = "0.1.0"
+description = "A script to remove in-line comments from Python code."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)"}
+authors = [
+  {name = "Yurika Corporation", email = "hello@yurikacorporation.com"},
+]
+keywords = ["python", "comments", "code cleaning", "developer tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/yuricorp/python-comment-strip" # Add your GitHub repo URL
+Repository = "https://github.com/yuricorp/python-comment-strip" # Add your GitHub repo URL
+
+[project.scripts]
+rmcom = "rmcom:main" # Assuming your main function in rmcom.py is called main
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
