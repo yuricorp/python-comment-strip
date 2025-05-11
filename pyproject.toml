@@ -28,6 +28,11 @@ classifiers = [
 Homepage = "https://github.com/yuricorp/python-comment-strip" # Add your GitHub repo URL
 Repository = "https://github.com/yuricorp/python-comment-strip" # Add your GitHub repo URL
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0", # Or your preferred version
+]
+
 [project.scripts]
 rmcom = "rmcom:main" # Assuming your main function in rmcom.py is called main
 
